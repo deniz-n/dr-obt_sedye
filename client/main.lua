@@ -116,7 +116,7 @@ function OpenActionMenuInteraction(closestObject)
 	ESX.UI.Menu.Open(
 		'default', GetCurrentResourceName(), 'action_menu',
 		{
-			title    = ('Waleron RolePlay'),
+			title    = ('Sedye'),
 			align    = 'top-left',
 			elements = elements
 		},
