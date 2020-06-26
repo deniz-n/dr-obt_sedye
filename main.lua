@@ -413,15 +413,12 @@ DrawText3Ds = function(coords, text, scale)
 	DrawRect(_x, _y + 0.0150, 0.030 + factor, 0.025, 41, 11, 41, 100)
 end
 
-GetPlayers = function()
+function GetPlayers()
     local players = {}
 
-    for i = 0, 31 do
-        if NetworkIsPlayerActive(i) then
-            table.insert(players, i)
-        end
+    for _, player in ipairs(GetActivePlayers()) do
+        table.insert(players, player)
     end
-
     return players
 end
 
